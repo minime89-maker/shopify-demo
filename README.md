@@ -1,29 +1,11 @@
-# Next.js + Tailwind CSS Example
+# ShopifyStorefrontApi + Next.js
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
-
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
-
-## Preview
-
-Preview the example live on [StackBlitz](http://stackblitz.com/):
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Prozess
+1. Erstellte Shopify Store [demo-store-test2](https://demo-store-test2.myshopify.com).
+2. Nextjs  app erstellt  ```npx create-next-app -e with-tailwind shopify-demo```.
+3. Anmeldedaten in ```.env.local``` gespeichert.
+4. Verwendet [js-buy-sdk](https://shopify.github.io/js-buy-sdk/index.html) Bibliothek, um Produkte aus dem Shop abzurufen.
+5. Neuen `Client` erstellt mit `domain`, `accessToken` .
+6. `fetchQuery` über `Client` aufgerufen.
+7. `products` erhalten und `map` über sie, um einzelne `product` zu erhalten.
+8. Tailwdincss für minimales Styling
