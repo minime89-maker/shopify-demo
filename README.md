@@ -2,6 +2,7 @@
 
 ## Prozess
 1. Erstellte Shopify Store [demo-store-test2](https://demo-store-test2.myshopify.com).
+2. Produkte per [csv](https://www.shopify.com/partners/blog/shopify-upload-products-csv) importieren
 2. Nextjs  app erstellt  ```npx create-next-app -e with-tailwind shopify-demo```.
 3. Anmeldedaten in ```.env.local``` gespeichert.
 4. Verwendet [js-buy-sdk](https://shopify.github.io/js-buy-sdk/index.html) Bibliothek, um Produkte aus dem Shop abzurufen.
